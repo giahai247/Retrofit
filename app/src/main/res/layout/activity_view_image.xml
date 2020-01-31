@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imgAss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:id="@+id/fab_label"
+        app:layout_anchor="@id/imgAss"
+        app:layout_anchorGravity="bottom|right|end"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/share24"
+            app:fab_size="mini"
+            fab:fab_label="Share"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/wallpaper"
+            app:fab_size="mini"
+            fab:fab_label="Wallpaper" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download26"
+            app:fab_size="mini"
+            fab:fab_label="Download" />
+    </com.github.clans.fab.FloatingActionMenu>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
